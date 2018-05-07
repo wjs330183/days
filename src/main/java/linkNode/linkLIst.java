@@ -9,7 +9,7 @@ public class linkLIst {
     public static void main(String[] args) {
         Random random = new Random();
 //        LinkedList<Integer> linkedList = new LinkedList();
-        List<Integer> linkedList = new ArrayList<>();
+        List<Integer> linkedList = new ArrayList<Integer>();
 
         for (int i = 0; i < 100; i++) {
             Integer j = random.nextInt(100) + 1;

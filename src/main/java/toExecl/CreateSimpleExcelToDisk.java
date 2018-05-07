@@ -74,6 +74,6 @@ public class CreateSimpleExcelToDisk {
         list.add(user1);
         list.add(user2);
         list.add(user3);
-        createExcel(list,"学生","学生表","C:/Users/wjs/Desktop");
+        createExcel(list,"学生","学生表","E:/");
     }
 }

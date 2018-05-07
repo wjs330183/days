@@ -18,6 +18,6 @@ public class Bank {
         save(100);
         System.out.println();
         new Thread(() -> System.out.println("lambda")).start();
-
+        //CATALINA_HOME
     }
 }
