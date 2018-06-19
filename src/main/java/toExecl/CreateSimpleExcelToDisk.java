@@ -1,6 +1,7 @@
 package toExecl;
 
 import org.apache.poi.hssf.usermodel.*;
+import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 
 import java.io.FileOutputStream;
 import java.text.ParseException;
@@ -23,7 +24,8 @@ public class CreateSimpleExcelToDisk {
         HSSFRow hssfRow = hssfSheet.createRow(0);
         //创建单元格,设置值表头 设置表头居中
         HSSFCellStyle hssfCellStyle = hssfWorkbook.createCellStyle();
-        hssfCellStyle.setAlignment(HSSFCellStyle.ALIGN_CENTER);
+
+        SXSSFWorkbook wb = new SXSSFWorkbook(100);
 
         HSSFCell hssfCell = hssfRow.createCell((short) 0);
         hssfCell.setCellValue("学号");
@@ -74,6 +76,6 @@ public class CreateSimpleExcelToDisk {
         list.add(user1);
         list.add(user2);
         list.add(user3);
-        createExcel(list,"学生","学生表","E:/");
+        createExcel(list,"学生","学生表1","/Users/a/Downloads");
     }
 }
